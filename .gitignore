@@ -1,0 +1,42 @@
+# Logs
+logs
+*.log
+*.log*
+
+# Coverage
+coverage
+
+# Temp
+*.bak
+*.tmp
+*.swp
+*.pyc
+
+# Dependencies
+node_modules
+
+# Cache
+.npm
+.eslintcache
+.cache
+
+# Thumbnails
+._*
+
+# IDE
+.idea
+.vscode
+*.suo
+*.sln
+*.sw*
+
+# OSX
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Output
+dist
+temp
+types

@@ -1,0 +1,55 @@
+{
+  "name": "tang-conf-node",
+  "version": "1.0.0",
+  "description": "Node.js version of Tangconf client.",
+  "main": "index.js",
+  "author": "lucasfe",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "google-protobuf": "^4.0.0-rc.2",
+    "jsondiffpatch": "^0.4.1",
+    "lru-cache": "^6.0.0",
+    "protobufjs": "^6.10.2"
+  },
+  "engines": {
+    "node": ">=14.0"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/google-protobuf": "^3.15.12",
+    "@types/jest": "^26.0.24",
+    "@types/lru-cache": "^5.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "grpc_tools_node_protoc_ts": "^5.3.3",
+    "grpc-tools": "^1.12.4",
+    "jest": "^27.0.6",
+    "lint-staged": "^10.5.1",
+    "npm-run-all": "^4.1.5",
+    "open-cli": "^7.0.1",
+    "prettier": "^2.2.0",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^9.0.0",
+    "tscpaths": "0.0.9",
+    "typescript": "^4.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "typings": "dist/index.d.ts"
+}
